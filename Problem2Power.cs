@@ -7,25 +7,20 @@ class Problem2Power
 {
     static double Power (double number, double power)
     {
-        double result = 1;
-        for (int i = 0; i < power; i++)
-        {
-            result *= number;
-        }
+        double result = Math.Pow(number, power);
         return result;
     }
     static double Power(double number, double power, bool roundDown)
 
     {
-        double result = 1;
-        for (int i = 0; i < power; i++)
-        {
-            result *= number;
-        }
+       
+        double result = Math.Pow(number, power);
         if (roundDown)
         {
             result = Math.Floor(result);
         }
+       
+        
         return result;
     }
 
