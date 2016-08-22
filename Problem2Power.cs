@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,13 +7,21 @@ class Problem2Power
 {
     static double Power (double number, double power)
     {
-        double result = Math.Pow(number, power);
+        double result = 1;
+        for (int i = 0; i < power; i++)
+        {
+            result *= number;
+        }
         return result;
     }
     static double Power(double number, double power, bool roundDown)
 
     {
-        double result = Math.Pow(number, power);
+        double result = 1;
+        for (int i = 0; i < power; i++)
+        {
+            result *= number;
+        }
         if (roundDown)
         {
             result = Math.Floor(result);
