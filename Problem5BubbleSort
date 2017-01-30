@@ -43,7 +43,7 @@ class Problem5BubbleSort
     {
         Console.WriteLine("Enter length of the array:");
         int a = int.Parse(Console.ReadLine());
-        Console.WriteLine("Enter the digits of the array:");
+        Console.WriteLine("Enter the DIGITS of the array:");
         CreateShowSortArrayNumbers(a);
     }
 }
